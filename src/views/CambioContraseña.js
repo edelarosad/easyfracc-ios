@@ -144,7 +144,7 @@ const ActualizarPassword = () => {
             <Image style={[globalStyles.titulo, styles.logo]} source={logoEasy} />
           </View>
 
-          <Text style={globalStyles.titulo}>Actualizar Contraseña</Text>
+          <Text style={globalStyles.titulo}>{t('ChangePassword')}</Text>
 
            <View style={styles.emailContainer}>
             <Text style={styles.emailLabel}>{t('user')}</Text>
@@ -170,13 +170,13 @@ const ActualizarPassword = () => {
           <Button mode="contained" 
             onPress={handlePasswordUpdate} 
             style={globalStyles.boton}>
-            <Text style={globalStyles.botonTexto}>Actualizar Contraseña</Text> 
+            <Text style={globalStyles.botonTexto}>{t('ChangePassword')}</Text> 
           </Button>
           
           <Button mode="contained" 
             onPress={handleLogin} 
             style={globalStyles.boton}>
-            <Text style={globalStyles.botonTexto}>Inicio</Text> 
+            <Text style={globalStyles.botonTexto}>{t('login')}</Text> 
           </Button>
         </View> 
       </LinearGradient>

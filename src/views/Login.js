@@ -108,13 +108,17 @@ const Login = () => {
       console.log(data);
       console.log(token);  
 
-      if (roles.includes('admin')) { navigation.navigate('Home') }
-      else if (roles.includes('residente')) { navigation.navigate('QrGenerator') }
-      else {
+    if (roles.includes('admin')) {
+        navigation.navigate('Home');
+      } else if (roles.includes('residente')) {
+        navigation.navigate('Home');
+      } else if (roles.includes('soporte')) {
+        navigation.navigate('Home'); 
+      } else {
         showSnackbar('No tienes permisos para acceder a esta aplicación');
         return;
       }
-      
+
 
      } catch (error) {
       showSnackbar(error.message); //Aqui se le puede hacer un replace para cambiar el idioma desde el server      

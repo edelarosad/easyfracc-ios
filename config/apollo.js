@@ -3,7 +3,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 const httpLink = createHttpLink({
-  uri: 'https://uptaskgraphqlbackend.onrender.com' //'https://uptaskgraphqlbackend.onrender.com' //'http://192.168.100.3:4000/' //'https://uptaskgraphqlbackend.onrender.com' //'http://127.0.0.1:4000'
+  uri: 'https://uptaskgraphqlbackend.onrender.com' //'https://easyfraccbe.onrender.com' //'https://uptaskgraphqlbackend.onrender.com' //'http://192.168.100.3:4000/' //'https://uptaskgraphqlbackend.onrender.com' //'http://127.0.0.1:4000'
 });
 
 const authLink = new ApolloLink(async (operation, forward) => {

@@ -19,6 +19,7 @@ import CambioContraseña from './src/views/CambioContraseña';
 import ConsultarUsuario from './src/views/ConsultarUsuario';
 import QRTemporal from './src/views/QRTemporal';
 import VisitasMenu from './src/views/VisitasMenu';
+import DeshabilitaUsuarios from './src/views/DeshabilitaUsuarios';
 
 //###### Images
 import logo from './assets/images/logoConinttec.png'; 
@@ -333,6 +334,31 @@ const App = () => {
                           <Stack.Screen
                   name="VisitasMenu"
                   component={VisitasMenu}
+                  options={{                  
+                            //title: t('VisitasMenu'),      
+                            headerTitle: () => null,                        
+                            
+                            headerStyle:{
+                              backgroundColor:'#548795',
+                              
+                            },                                    
+                            headerTintColor:'#FFF',
+                            headerTitleStyle:{
+                              fontWeight:'bold'
+                            },
+                            headerTitleAlign:'center',
+                            headerRight: () => (                              
+                              <Image
+                                source={logoEasy}
+                                style={{ width: 100, height: 50,  borderRadius: 25, marginRight: 15, resizeMode: 'contain' }} // Agregamos marginRight
+                              />                              
+                            )
+                            
+                            }} />
+
+                            <Stack.Screen
+                  name="DeshabilitaUsuarios"
+                  component={DeshabilitaUsuarios}
                   options={{                  
                             //title: t('VisitasMenu'),      
                             headerTitle: () => null,                        
